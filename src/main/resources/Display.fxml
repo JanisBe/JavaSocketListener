@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import streamingdatafx.*?>
+
+<GridPane alignment="CENTER" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="streamingdatafx.DisplayController">
+
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10" />
+    </padding>
+
+    <Label text="Speed:" visible="false" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+    <Label fx:id="speedLabel" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+   <TextArea fx:id="output" prefHeight="400.0" prefWidth="800.0" GridPane.columnIndex="1" GridPane.columnSpan="2" />
+    <NumberTextField fx:id="portNo" promptText="port no" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+    <Button fx:id="start" mnemonicParsing="false" onAction="#start" text="Start listening" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+   <columnConstraints>
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
